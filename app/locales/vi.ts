@@ -61,24 +61,17 @@ const vi: PartialLocaleType = {
   Settings: {
     Title: "Cài đặt",
     SubTitle: "Tất cả cài đặt",
-
-    Lang: {
-      Name: "Language", // ATTENTION: if you wanna add a new translation, please do not translate this value, leave it as `Language`
-      All: "Tất cả ngôn ngữ",
-    },
     Avatar: "Ảnh đại diện",
     FontSize: {
       Title: "Font chữ",
       SubTitle: "Thay đổi font chữ của nội dung trò chuyện",
     },
-    Update: {
-      Version: (x: string) => `Phiên bản: ${x}`,
-      IsLatest: "Phiên bản mới nhất",
-      CheckUpdate: "Kiểm tra bản cập nhật",
-      IsChecking: "Kiểm tra bản cập nhật...",
-      FoundUpdate: (x: string) => `Phát hiện phiên bản mới: ${x}`,
-      GoToUpdate: "Cập nhật",
+    InjectSystemPrompts: {
+      Title: "Tiêm Prompt Hệ thống",
+      SubTitle:
+        "Bắt buộc thêm một prompt hệ thống giả lập ChatGPT ở đầu danh sách tin nhắn cho mỗi yêu cầu",
     },
+
     SendKey: "Phím gửi",
     Theme: "Theme",
     TightBorder: "Chế độ không viền",
@@ -87,8 +80,10 @@ const vi: PartialLocaleType = {
       SubTitle: "Xem trước nội dung markdown bằng bong bóng",
     },
     Mask: {
-      Title: "Mask Splash Screen",
-      SubTitle: "Chớp màn hình khi bắt đầu cuộc trò chuyện mới",
+      Splash: {
+        Title: "Mask Splash Screen",
+        SubTitle: "Chớp màn hình khi bắt đầu cuộc trò chuyện mới",
+      },
     },
     Prompt: {
       Disable: {
@@ -116,11 +111,7 @@ const vi: PartialLocaleType = {
       Title: "Ngưỡng nén lịch sử tin nhắn",
       SubTitle: "Thực hiện nén nếu số lượng tin nhắn chưa nén vượt quá ngưỡng",
     },
-    Token: {
-      Title: "API Key",
-      SubTitle: "Sử dụng khóa của bạn để bỏ qua giới hạn mã truy cập",
-      Placeholder: "OpenAI API Key",
-    },
+
     Usage: {
       Title: "Hạn mức tài khoản",
       SubTitle(used: any, total: any) {
@@ -130,11 +121,7 @@ const vi: PartialLocaleType = {
       Check: "Kiểm tra",
       NoAccess: "Nhập API Key để kiểm tra hạn mức",
     },
-    AccessCode: {
-      Title: "Mã truy cập",
-      SubTitle: "Đã bật kiểm soát truy cập",
-      Placeholder: "Nhập mã truy cập",
-    },
+
     Model: "Mô hình",
     Temperature: {
       Title: "Tính ngẫu nhiên (temperature)",
@@ -178,6 +165,9 @@ const vi: PartialLocaleType = {
   },
   Plugin: {
     Name: "Plugin",
+  },
+  FineTuned: {
+    Sysmessage: "Bạn là một trợ lý",
   },
   Mask: {
     Name: "Mẫu",
